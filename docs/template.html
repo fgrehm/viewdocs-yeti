@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="http://fgrehm.github.io/viewdocs-yeti/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="http://fgrehm.github.io/viewdocs-yeti/stylesheets/pygment_trac.css">
 
+    <style>
+      html, body {
+        height: 100%;
+      }
+      footer p {
+        clear: left;
+        margin-bottom: 0;
+      }
+      #wrap {
+        min-height: 100%;
+        height: auto;
+        margin: 0 auto -60px;
+        padding: 0 0 60px;
+      }
+      #wrap > .container {
+        padding-top: 60px;
+      }
+    </style>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -15,90 +34,80 @@
     <![endif]-->
   </head>
   <body>
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="../" class="navbar-brand">Bootswatch</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a tabindex="-1" href="../default/">Default</a></li>
-                <li class="divider"></li>
-                <li><a tabindex="-1" href="../amelia/">Amelia</a></li>
-                <li><a tabindex="-1" href="../cerulean/">Cerulean</a></li>
-                <li><a tabindex="-1" href="../cosmo/">Cosmo</a></li>
-                <li><a tabindex="-1" href="../cyborg/">Cyborg</a></li>
-                <li><a tabindex="-1" href="../flatly/">Flatly</a></li>
-                <li><a tabindex="-1" href="../journal/">Journal</a></li>
-                <li><a tabindex="-1" href="../readable/">Readable</a></li>
-                <li><a tabindex="-1" href="../simplex/">Simplex</a></li>
-                <li><a tabindex="-1" href="../slate/">Slate</a></li>
-                <li><a tabindex="-1" href="../spacelab/">Spacelab</a></li>
-                <li><a tabindex="-1" href="../united/">United</a></li>
-                <li><a tabindex="-1" href="../yeti/">Yeti</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="../help/">Help</a>
-            </li>
-            <li>
-              <a href="http://news.bootswatch.com">Blog</a>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a></li>
-                <li><a tabindex="-1" href="./bootstrap.css">bootstrap.css</a></li>
-                <li class="divider"></li>
-                <li><a tabindex="-1" href="./variables.less">variables.less</a></li>
-                <li><a tabindex="-1" href="./bootswatch.less">bootswatch.less</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      {{CONTENT}}
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-
-            <ul class="list-unstyled">
-              <li class="pull-right"><a href="#top">Back to top</a></li>
-              <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
-              <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
-              <li><a href="https://twitter.com/thomashpark">Twitter</a></li>
-              <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
-              <li><a href="../help/#api">API</a></li>
-              <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2">Donate</a></li>
+    <div id="wrap">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <span class="navbar-brand">{{NAME}}</span>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="themes">
+                  <li><a tabindex="-1" href="../default/">Default</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="../amelia/">Amelia</a></li>
+                  <li><a tabindex="-1" href="../cerulean/">Cerulean</a></li>
+                  <li><a tabindex="-1" href="../cosmo/">Cosmo</a></li>
+                  <li><a tabindex="-1" href="../cyborg/">Cyborg</a></li>
+                  <li><a tabindex="-1" href="../flatly/">Flatly</a></li>
+                  <li><a tabindex="-1" href="../journal/">Journal</a></li>
+                  <li><a tabindex="-1" href="../readable/">Readable</a></li>
+                  <li><a tabindex="-1" href="../simplex/">Simplex</a></li>
+                  <li><a tabindex="-1" href="../slate/">Slate</a></li>
+                  <li><a tabindex="-1" href="../spacelab/">Spacelab</a></li>
+                  <li><a tabindex="-1" href="../united/">United</a></li>
+                  <li><a tabindex="-1" href="../yeti/">Yeti</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../help/">Help</a>
+              </li>
+              <li>
+                <a href="http://news.bootswatch.com">Blog</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="download">
+                  <li><a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a></li>
+                  <li><a tabindex="-1" href="./bootstrap.css">bootstrap.css</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="./variables.less">variables.less</a></li>
+                  <li><a tabindex="-1" href="./bootswatch.less">bootswatch.less</a></li>
+                </ul>
+              </li>
             </ul>
-            <p>Made by <a href="http://thomaspark.me">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
-            <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.</p>
-            <p>Based on <a href="http://getbootstrap.com">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts">Google</a>. Favicon by <a href="https://twitter.com/geraldhiller">Gerald Hiller</a>.</p>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
+              <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+            </ul>
 
           </div>
         </div>
+      </div>
 
-      </footer>
-
-
+      <div class="container">
+        {{CONTENT}}
+      </div>
     </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Hosted on <a href="http://viewdocs.io">http://viewdocs.io</a>.</p>
+            <p>Theme based on <a href="http://bootswatch.com/yeti/">Yeti</a> built by <a href="http://thomaspark.me">Thomas Park</a> and adapted to Viewdocs by <a href="http://fabiorehm.com/">Fábio Rehm</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="//oss.maxcdn.com/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
