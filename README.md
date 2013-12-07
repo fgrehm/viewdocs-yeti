@@ -1,4 +1,4 @@
-# viewdocs-yati
+# viewdocs-yeti
 
 A theme for [Viewdocs](http://viewdocs.io) that is based on [Yeti](http://bootswatch.com/yeti/)
 with [syntax highlighting styles](https://github.com/broccolini/dinky/blob/master/stylesheets/pygment_trac.css)
